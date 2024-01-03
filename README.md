@@ -1,7 +1,7 @@
 # STL_LDMO_project
 
 ## Getting Started
-Python implementation of the main clustering results for the paper entitled:
+Python implementation of the main results for the paper entitled:
 _Conformal prediction of molecule-induced cancer cell growth inhibition challenged by strong distribution shifts_
 
 
