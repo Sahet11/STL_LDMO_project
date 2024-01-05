@@ -5,55 +5,29 @@ Python implementation of the main results for the paper entitled:
 _Conformal prediction of molecule-induced cancer cell growth inhibition challenged by strong distribution shifts_
 
 
+## Data split
+Utilizing the UMAP-based clustering method, 7 clusters were derived for non-outlier molecules, with the outlier set forming its distinct cluster. 
+ 
+<img width="606" alt="cell_split" src="https://github.com/Sahet11/STL_LDMO_project/assets/50385322/607ac164-52c6-49ec-a75e-46e9ca8e2be4">
+
 ## Prerequisites
 - Python 3.9.7
-- [venv](https://docs.python.org/3/tutorial/venv.html) 
-
-## Installation
-
-1. Create the virtual environment
-```bash
-python -m venv .venv
-```
-
-2. Activate the virtual environment
-   1. On Windows, run:
-   ```bash
-   .venv\Scripts\activate.bat
-   ```
-   2. On Linux or MacOs, run:
-   ```bash
-   .source .venv/bin/activate
-   ```
-3. Install all the necessary packages 
-```bash
-python -m pip install -r requirements.txt
-```
 
 ## Usage
 
 1. Download and store the from the [NCI-60 Growth Inhibition Data](https://wiki.nci.nih.gov/display/NCIDTPdata/NCI-60+Data+Download+-+Previous+Releases). 
    1. The required files contain the endpoints calculated from concentration curves ("CANCER60GI50_Oct2020.LST", for instance) and SMILES ("Chem2D_Jun2016.smi", for instance). 
       Other releases of both files are also available for download.
-2. In the file _main.py_, replace the following lines.
-   1. Replace with the directory  where the downloaded data is stored
-   ```python
-   dir_working = '/home/hernadez/Documents/NCI60_data/' 
-   ```
-   2. Replace only if the files are different from those suggested in 1.
-   ```python
-   file_nci60 = 'CANCER60GI50_Oct2020.LST'  
-   file_smiles = 'Chem2D_Jun2016.smi' 
-   ```
-
 
 To run:
 ```python
-python main.py
+jupyter notebook code_Figure5.ipynb
+jupyter notebook code_Figure6.ipynb
+
 ```
 
 Output:
-As a result, 
+Figures 5 and 6. 
 
 ### License
 MIT
